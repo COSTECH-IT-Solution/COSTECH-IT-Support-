@@ -79,7 +79,8 @@
         <div class="container hero-content">
             <h1>Votre Partenaire de Confiance en <span class="highlight">Support Informatique</span> à Douala</h1>
             <p>Maintenance préventive, dépannage matériel, et solutions IT sur mesure pour entreprises et particuliers. Ne laissez pas une panne ralentir votre activité.</p>
-            <a href="#contact" class="btn">Demander une Assistance</a>
+            <a href="#contact" class="btn"> <i class="fa-solid fa-phone"></i>Demander une Assistance</a>
+
             <!-- Bouton Vert pour le Guide de Maintenance -->
     <a href="GUIDE DE MAINTENANCE INFORMATIQUE.pdf" download class="btn" download="GUIDE DE MAINTENANCE INFORMATIQUE.pdf"style="background-color: #25d366; margin-left: 10px;">
        
@@ -222,87 +223,97 @@
     </div>
 </section>
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Besoin d'une Intervention ?</h2>
-            <div class="contact-wrapper">
-                <form id="whatsappForm" class="contact-form">
-                    <div class="form-group">
-                        <label for="clientName">Nom</label>
-                        <input type="text" id="clientName" name="clientName" placeholder="Votre nom" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="projectType">Type de Problème</label>
-                        <select id="projectType" name="projectType" required>
-                            <option value="" disabled selected>Sélectionnez...</option>
-                            <option value="Réparation Matériel">Réparation Matériel</option>
-                            <option value="Récupération Données">Récupération Données</option>
-                            <option value="Problème Réseau">Problème Réseau</option>
-                            <option value="Autre">Autre</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="clientMessage">Détails de la panne</label>
-                        <textarea id="clientMessage" name="clientMessage" rows="4" placeholder="Décrivez le problème..." required></textarea>
-                    </div>
-                    <button type="submit" class="whatsapp-btn">
-                        <i class="fa-brands fa-whatsapp"></i> Envoyer sur WhatsApp
-                    </button>
-                </form>
+
+    <!-- Section Contact -->
+<section id="contact" class="contact-section" style="padding: 50px 0;">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 30px;">Besoin d'une Intervention ?</h2>
+
+        <div class="contact-wrapper" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+            <div class="contact-info-box" style="flex: 1; min-width: 300px;">
+                <h3>Détails de contact</h3>
+                <p>Vous avez une application à développer ou des ordinateurs d'entreprise à faire réparer ? Contactez-moi.</p>
+                <div class="info-item" style="margin-bottom: 15px;">
+                    <i class="fa-solid fa-envelope"></i> <span>costechinfo@gmail.com</span>
+                </div>
+                <div class="info-item" style="margin-bottom: 15px;">
+                    <i class="fa-solid fa-location-dot"></i> <span>Douala, Cameroun</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-brands fa-whatsapp-square" style="color: #25d366; font-size: 24px;"></i>
+                    <span>Assistance immédiate par WhatsApp</span>
+                </div>
             </div>
-        </div>
-    </section>
 
-    
+            <form id="whatsappForm" class="contact-form" style="flex: 1; min-width: 300px;">
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="clientName">Nom</label>
+                    <input type="text" id="clientName" name="clientName" placeholder="Votre nom" required style="width: 100%; padding: 8px;">
+                </div>
 
-
-    <section id="gallery" class="container" style="padding: 40px 0;">
-    <h2 style="text-align: center; margin-bottom: 30px;">COSTECH sur le terrain</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-        <div class="project-card">
-            <img src="images/depannage-bureau.jpg" alt="Technicien COSTECH travaillant sur un ordinateur" style="width:100%; border-radius: 8px;">
-            <p style="margin-top: 10px;">Maintenance préventive en atelier.</p>
-        </div>
-        <div class="project-card">
-            <img src="images/installation-site.jpg" alt="Technicien COSTECH en polo et casquette sur site" style="width:100%; border-radius: 8px;">
-            <p style="margin-top: 10px;">Déploiement et installation réseau en entreprise.</p>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="clientEmail">Email</label>
+                    <input type="email" id="clientEmail" name="clientEmail" placeholder="votre@email.com" required style="width: 100%; padding: 8px;">
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="projectType">Type de Problème</label>
+                    <select id="projectType" name="projectType" required style="width: 100%; padding: 8px;">
+                        <option value="" disabled selected>Sélectionnez...</option>
+                        <option value="Réparation Matériel">Réparation Matériel</option>
+                        <option value="Récupération Données">Récupération Données</option>
+                        <option value="Problème Réseau">Problème Réseau</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label for="clientMessage">Détails de votre problème</label>
+                    <textarea id="clientMessage" name="clientMessage" rows="4" placeholder="Décrivez le problème..." required style="width: 100%; padding: 8px;"></textarea>
+                </div>
+                <button type="submit" class="whatsapp-btn" style="background: #25d366; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">
+                    <i class="fa-brands fa-whatsapp"></i> Envoyer sur WhatsApp
+                </button>
+            </form>
         </div>
     </div>
-</section>
+
+<!-- Footer Amélioré -->
+<footer style="background: #333; color: white; text-align: center; padding: 30px 0; margin-top: 50px;">
+    <div class="container">
+        <p style="margin-bottom: 10px; font-weight: bold;">COSTECH IT Solution</p>
+        <p style="font-size: 0.9em; opacity: 0.8;">Expertise en développement web, maintenance informatique et réseaux à Douala.</p>
+        <hr style="width: 50px; border: 1px solid #555; margin: 15px auto;">
+        <p>&copy; 2026 Tous droits réservés.</p>
+    </div>
+</footer>
+
+ <script>
+document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Récupération correcte des valeurs
+    const name = document.getElementById('clientName').value;
+    const email = document.getElementById('clientEmail').value;
+    const service = document.getElementById('projectType').value;
+    const message = document.getElementById('clientMessage').value;
+
+    // Traduction du message en français
+    const plainText = `*Nouvelle demande via le site web*\n\n` +
+                      `*Nom:* ${name}\n` +
+                      `*Email:* ${email}\n` +
+                      `*Service:* ${service}\n` +
+                      `*Message:* ${message}`;
+
+    const encodedText = encodeURIComponent(plainText);
     
-    <footer>
-        <p>&copy; 2026 COSTECH IT Solution. Tous droits réservés.</p>
-    </footer>
+    // URL directe avec votre numéro
+    const whatsappUrl = `https://wa.me/237656746172?text=${encodedText}`;
 
-    <script>
-        // Scripts remain the same as your original
-        document.addEventListener("DOMContentLoaded", () => {
-            const accordionHeaders = document.querySelectorAll(".accordion-header");
-            accordionHeaders.forEach(header => {
-                header.addEventListener("click", function() {
-                    const item = this.parentElement;
-                    const content = this.nextElementSibling;
-                    const isActive = item.classList.contains("active");
-                    document.querySelectorAll(".accordion-item").forEach(el => {
-                        el.classList.remove("active");
-                        el.querySelector(".accordion-content").style.maxHeight = null;
-                    });
-                    if (!isActive) {
-                        item.classList.add("active");
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
-            });
-        });
+    window.open(whatsappUrl, '_blank');
+});
+</script>
 
-        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('clientName').value;
-            const service = document.getElementById('projectType').value;
-            const message = document.getElementById('clientMessage').value;
-            const text = `*Nouvelle demande de support*\n\nNom: ${name}\nService: ${service}\nMessage: ${message}`;
-            window.open(`https://wa.me/237656746172?text=${encodeURIComponent(text)}`, '_blank');
-        });
-    </script>
+<script src="script.js"></script>
+
 </body>
 </html>
