@@ -10,53 +10,33 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
-    <!-- Bouton Back to Top -->
-<a href="#top" class="back-to-top" title="Retour en haut">
-    <i class="fa-solid fa-chevron-up"></i>
-</a>
-
-<style>
-    /* Style du bouton Back to Top */
-    .back-to-top {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        background-color: #007bff; /* Bleu professionnel */
-        color: white;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        transition: all 0.3s ease;
-        z-index: 1000;
-    }
-
-    .back-to-top:hover {
-        background-color: #0056b3;
-        transform: translateY(-5px);
-    }
-
-    /* Assurer le défilement fluide */
-    html {
-        scroll-behavior: smooth;
-    }
-</style>
     <style>
-        html { scroll-behavior: smooth; }
-        .back-to-top {
-            position: fixed; bottom: 30px; right: 30px;
-            background-color: #25d366; color: white;
-            width: 50px; height: 50px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            text-decoration: none; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            z-index: 1000; transition: transform 0.3s ease;
+        html { 
+            scroll-behavior: smooth; 
         }
-        .back-to-top:hover { transform: translateY(-5px); }
+
+        .back-to-top {
+            position: fixed; 
+            bottom: 30px; 
+            right: 30px;
+            background-color: #25d366; 
+            color: white;
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%;
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            text-decoration: none; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000; 
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .back-to-top:hover { 
+            transform: translateY(-5px); 
+            background-color: #1cbd55;
+        }
     </style>
 </head>
 <body id="top">
@@ -79,13 +59,12 @@
         <div class="container hero-content">
             <h1>Votre Partenaire de Confiance en <span class="highlight">Support Informatique</span> à Douala</h1>
             <p>Maintenance préventive, dépannage matériel, et solutions IT sur mesure pour entreprises et particuliers. Ne laissez pas une panne ralentir votre activité.</p>
-            <a href="#contact" class="btn"> <i class="fa-solid fa-phone"></i>Demander une Assistance</a>
+            <a href="#contact" class="btn"><i class="fa-solid fa-phone"></i> Demander une Assistance</a>
 
-            <!-- Bouton Vert pour le Guide de Maintenance -->
-    <a href="GUIDE DE MAINTENANCE INFORMATIQUE.pdf" download class="btn" download="GUIDE DE MAINTENANCE INFORMATIQUE.pdf"style="background-color: #25d366; margin-left: 10px;">
-       
-        <i class="fa-solid fa-download"></i> Guide Maintenance
-    </a>
+            <!-- FIXED PDF DOWNLOAD LINK -->
+            <a href="GUIDE DE MAINTENANCE INFORMATIQUE.pdf" download="GUIDE_DE_MAINTENANCE_INFORMATIQUE.pdf" class="btn" style="background-color: #25d366; margin-left: 10px;">
+                <i class="fa-solid fa-download"></i> Guide Maintenance
+            </a>
         </div>
     </section>
 
@@ -93,8 +72,6 @@
         <h2>À Propos</h2>
         <p><b>COSTECH IT Solution</b> est votre spécialiste en maintenance informatique à Douala. Nous assurons la pérennité de votre parc informatique grâce à une expertise technique complète, du dépannage matériel à la sécurisation de vos données.</p>
     </section>
-    
-    
 
     <section id="services" class="skills-section">
         <div class="container">
@@ -145,175 +122,161 @@
                     </div>
                 </div>
 
-    <div class="accordion-item">
-    <button class="accordion-header">
-        <span><i class="fa-solid fa-code icon"></i> Développement & Solutions Web</span>
-        <i class="fa-solid fa-chevron-down arrow"></i>
-    </button>
-    <div class="accordion-content">
-        <ul>
-            <li><strong>Développement de Sites Web:</strong> Création de sites vitrines et e-commerce modernes, responsives et optimisés.</li>
-            <li><strong>Logiciels sur mesure:</strong> Conception d'applications de gestion (SaaS) adaptées à vos besoins spécifiques.</li>
-            <li><strong>Maintenance Web:</strong> Mise à jour, sécurité et optimisation de vos plateformes existantes.</li>
-            <li><strong>Intégration API:</strong> Connexion de vos outils numériques pour automatiser vos tâches quotidiennes.</li>
-        </ul>
-    </div>
-</div>
-
-            <!-- Conseil & Infrastructure -->
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    <span><i class="fa-solid fa-headset icon"></i> Conseil & Infrastructure IT</span>
-                    <i class="fa-solid fa-chevron-down arrow"></i>
-                </button>
-                <div class="accordion-content">
-                    <ul>
-                        <li><strong>Conseil Achat:</strong> Accompagnement dans le choix de votre futur matériel informatique selon vos besoins.</li>
-                        <li><strong>Câblage & Réseau:</strong> Installation de réseaux Wi-Fi sécurisés, configuration de routeurs et switchs.</li>
-                        <li><strong>Support Utilisateur:</strong> Assistance technique personnalisée pour vos employés ou vos besoins personnels.</li>
-                        <li><strong>Mise en réseau:</strong> Partage de ressources (imprimantes, fichiers) au sein de votre domicile ou bureau.</li>
-                    </ul>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-code icon"></i> Développement & Solutions Web</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Développement de Sites Web:</strong> Création de sites vitrines et e-commerce modernes, responsives et optimisés.</li>
+                            <li><strong>Logiciels sur mesure:</strong> Conception d'applications de gestion (SaaS) adaptées à vos besoins spécifiques.</li>
+                            <li><strong>Maintenance Web:</strong> Mise à jour, sécurité et optimisation de vos plateformes existantes.</li>
+                            <li><strong>Intégration API:</strong> Connexion de vos outils numériques pour automatiser vos tâches quotidiennes.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="accordion-item">
-    <button class="accordion-header">
-        <span><i class="fa-solid fa-cart-shopping icon"></i> Vente & Conseil Équipement</span>
-        <i class="fa-solid fa-chevron-down arrow"></i>
-    </button>
-    <div class="accordion-content">
-        <ul>
-            <li><strong>Vente de Matériel:</strong> Ordinateurs, imprimantes, composants (disques, RAM) et accessoires neufs avec garantie.</li>
-            <li><strong>Conseil Achat:</strong> Audit de vos besoins pour choisir le matériel le plus rentable et durable.</li>
-            <li><strong>Installation sur site:</strong> Configuration complète de votre nouvel équipement, prêt à l'emploi.</li>
-        </ul>
-    </div>
-</div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-headset icon"></i> Conseil & Infrastructure IT</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Conseil Achat:</strong> Accompagnement dans le choix de votre futur matériel informatique selon vos besoins.</li>
+                            <li><strong>Câblage & Réseau:</strong> Installation de réseaux Wi-Fi sécurisés, configuration de routeurs et switchs.</li>
+                            <li><strong>Support Utilisateur:</strong> Assistance technique personnalisée pour vos employés ou vos besoins personnels.</li>
+                            <li><strong>Mise en réseau:</strong> Partage de ressources (imprimantes, fichiers) au sein de votre domicile ou bureau.</li>
+                        </ul>
+                    </div>
+                </div>
 
-<li><strong>Virtualisation:</strong> Installation de machines virtuelles pour faire tourner d'anciens logiciels sur des systèmes récents.</li>
-
-        </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fa-solid fa-cart-shopping icon"></i> Vente & Conseil Équipement</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Vente de Matériel:</strong> Ordinateurs, imprimantes, composants (disques, RAM) et accessoires neufs avec garantie.</li>
+                            <li><strong>Conseil Achat:</strong> Audit de vos besoins pour choisir le matériel le plus rentable et durable.</li>
+                            <li><strong>Installation sur site:</strong> Configuration complète de votre nouvel équipement, prêt à l'emploi.</li>
+                            <li><strong>Virtualisation:</strong> Installation de machines virtuelles pour faire tourner d'anciens logiciels sur des systèmes récents.</li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
         </div>
     </section>
 
     <section id="gallery" class="container" style="padding: 50px 0;">
-    <h2 style="text-align: center; margin-bottom: 30px;">COSTECH en Action</h2>
-    <div class="gallery-container">
-        
-        <!-- Image 1 : Dépannage matériel -->
-        <div class="gallery-card">
-            <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dépannage informatique">
-            <p style="text-align: center; font-weight: bold; margin-top: 10px;">Maintenance & Réparation de précision</p>
-        </div>
-
-        <!-- Image 2 : Intervention technique -->
-        <div class="gallery-card">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Technicien en intervention">
-            <p style="text-align: center; font-weight: bold; margin-top: 10px;">Intervention experte sur site</p>
-        </div>
-
-        <!-- Image 3 : Développement et Setup -->
-        <div class="gallery-card">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Développement de logiciels">
-            <p style="text-align: center; font-weight: bold; margin-top: 10px;">Développement & Solutions Logicielles</p>
-        </div>
-
-    </div>
-</section>
-
-
-    <!-- Section Contact -->
-<section id="contact" class="contact-section" style="padding: 50px 0;">
-    <div class="container">
-        <h2 style="text-align: center; margin-bottom: 30px;">Besoin d'une Intervention ?</h2>
-
-        <div class="contact-wrapper" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
-            <div class="contact-info-box" style="flex: 1; min-width: 300px;">
-                <h3>Détails de contact</h3>
-                <p>Vous avez une application à développer ou des ordinateurs d'entreprise à faire réparer ? Contactez-moi.</p>
-                <div class="info-item" style="margin-bottom: 15px;">
-                    <i class="fa-solid fa-envelope"></i> <span>costechinfo@gmail.com</span>
-                </div>
-                <div class="info-item" style="margin-bottom: 15px;">
-                    <i class="fa-solid fa-location-dot"></i> <span>Douala, Cameroun</span>
-                </div>
-                <div class="info-item">
-                    <i class="fa-solid fa-brands fa-whatsapp-square" style="color: #25d366; font-size: 24px;"></i>
-                    <span>Assistance immédiate par WhatsApp</span>
-                </div>
+        <h2 style="text-align: center; margin-bottom: 30px;">COSTECH en Action</h2>
+        <div class="gallery-container">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dépannage informatique">
+                <p style="text-align: center; font-weight: bold; margin-top: 10px;">Maintenance & Réparation de précision</p>
             </div>
-
-            <form id="whatsappForm" class="contact-form" style="flex: 1; min-width: 300px;">
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label for="clientName">Nom</label>
-                    <input type="text" id="clientName" name="clientName" placeholder="Votre nom" required style="width: 100%; padding: 8px;">
-                </div>
-
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label for="clientEmail">Email</label>
-                    <input type="email" id="clientEmail" name="clientEmail" placeholder="votre@email.com" required style="width: 100%; padding: 8px;">
-                </div>
-                
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label for="projectType">Type de Problème</label>
-                    <select id="projectType" name="projectType" required style="width: 100%; padding: 8px;">
-                        <option value="" disabled selected>Sélectionnez...</option>
-                        <option value="Réparation Matériel">Réparation Matériel</option>
-                        <option value="Récupération Données">Récupération Données</option>
-                        <option value="Problème Réseau">Problème Réseau</option>
-                        <option value="Autre">Autre</option>
-                    </select>
-                </div>
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label for="clientMessage">Détails de votre problème</label>
-                    <textarea id="clientMessage" name="clientMessage" rows="4" placeholder="Décrivez le problème..." required style="width: 100%; padding: 8px;"></textarea>
-                </div>
-                <button type="submit" class="whatsapp-btn" style="background: #25d366; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">
-                    <i class="fa-brands fa-whatsapp"></i> Envoyer sur WhatsApp
-                </button>
-            </form>
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Technicien en intervention">
+                <p style="text-align: center; font-weight: bold; margin-top: 10px;">Intervention experte sur site</p>
+            </div>
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Développement de logiciels">
+                <p style="text-align: center; font-weight: bold; margin-top: 10px;">Développement & Solutions Logicielles</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-<!-- Footer Amélioré -->
-<footer style="background: #333; color: white; text-align: center; padding: 30px 0; margin-top: 50px;">
-    <div class="container">
-        <p style="margin-bottom: 10px; font-weight: bold;">COSTECH IT Solution</p>
-        <p style="font-size: 0.9em; opacity: 0.8;">Expertise en développement web, maintenance informatique et réseaux à Douala.</p>
-        <hr style="width: 50px; border: 1px solid #555; margin: 15px auto;">
-        <p>&copy; 2026 Tous droits réservés.</p>
-    </div>
-</footer>
+    <section id="contact" class="contact-section" style="padding: 50px 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 30px;">Besoin d'une Intervention ?</h2>
 
- <script>
-document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+            <div class="contact-wrapper" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+                <div class="contact-info-box" style="flex: 1; min-width: 300px;">
+                    <h3>Détails de contact</h3>
+                    <p>Vous avez une application à développer ou des ordinateurs d'entreprise à faire réparer ? Contactez-moi.</p>
+                    <div class="info-item" style="margin-bottom: 15px;">
+                        <i class="fa-solid fa-envelope"></i> <span>costechinfo@gmail.com</span>
+                    </div>
+                    <div class="info-item" style="margin-bottom: 15px;">
+                        <i class="fa-solid fa-location-dot"></i> <span>Douala, Cameroun</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-brands fa-whatsapp-square" style="color: #25d366; font-size: 24px;"></i>
+                        <span>Assistance immédiate par WhatsApp</span>
+                    </div>
+                </div>
 
-    // Récupération correcte des valeurs
-    const name = document.getElementById('clientName').value;
-    const email = document.getElementById('clientEmail').value;
-    const service = document.getElementById('projectType').value;
-    const message = document.getElementById('clientMessage').value;
+                <form id="whatsappForm" class="contact-form" style="flex: 1; min-width: 300px;">
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="clientName">Nom</label>
+                        <input type="text" id="clientName" name="clientName" placeholder="Votre nom" required style="width: 100%; padding: 8px;">
+                    </div>
 
-    // Traduction du message en français
-    const plainText = `*Nouvelle demande via le site web*\n\n` +
-                      `*Nom:* ${name}\n` +
-                      `*Email:* ${email}\n` +
-                      `*Service:* ${service}\n` +
-                      `*Message:* ${message}`;
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="clientEmail">Email</label>
+                        <input type="email" id="clientEmail" name="clientEmail" placeholder="votre@email.com" required style="width: 100%; padding: 8px;">
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="projectType">Type de Problème</label>
+                        <select id="projectType" name="projectType" required style="width: 100%; padding: 8px;">
+                            <option value="" disabled selected>Sélectionnez...</option>
+                            <option value="Réparation Matériel">Réparation Matériel</option>
+                            <option value="Récupération Données">Récupération Données</option>
+                            <option value="Problème Réseau">Problème Réseau</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="clientMessage">Détails de votre problème</label>
+                        <textarea id="clientMessage" name="clientMessage" rows="4" placeholder="Décrivez le problème..." required style="width: 100%; padding: 8px;"></textarea>
+                    </div>
+                    <button type="submit" class="whatsapp-btn" style="background: #25d366; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">
+                        <i class="fa-brands fa-whatsapp"></i> Envoyer sur WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-    const encodedText = encodeURIComponent(plainText);
-    
-    // URL directe avec votre numéro
-    const whatsappUrl = `https://wa.me/237656746172?text=${encodedText}`;
+    <footer style="background: #333; color: white; text-align: center; padding: 30px 0; margin-top: 50px;">
+        <div class="container">
+            <p style="margin-bottom: 10px; font-weight: bold;">COSTECH IT Solution</p>
+            <p style="font-size: 0.9em; opacity: 0.8;">Expertise en développement web, maintenance informatique et réseaux à Douala.</p>
+            <hr style="width: 50px; border: 1px solid #555; margin: 15px auto;">
+            <p>&copy; 2026 Tous droits réservés.</p>
+        </div>
+    </footer>
 
-    window.open(whatsappUrl, '_blank');
-});
-</script>
+    <a href="#top" class="back-to-top" title="Retour en haut">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
 
-<script src="script.js"></script>
+    <script>
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('clientName').value;
+            const email = document.getElementById('clientEmail').value;
+            const service = document.getElementById('projectType').value;
+            const message = document.getElementById('clientMessage').value;
+
+            const plainText = `*Nouvelle demande via le site web*\n\n` +
+                              `*Nom:* ${name}\n` +
+                              `*Email:* ${email}\n` +
+                              `*Service:* ${service}\n` +
+                              `*Message:* ${message}`;
+
+            const encodedText = encodeURIComponent(plainText);
+            const whatsappUrl = `https://wa.me/237656746172?text=${encodedText}`;
+
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
